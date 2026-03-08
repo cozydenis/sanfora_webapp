@@ -1,0 +1,131 @@
+[
+  {
+    "id": "w001",
+    "title": "Rolex Submariner Date",
+    "slug": "rolex-submariner-date-116610ln",
+    "category": "watch",
+    "collection": ["featured", "new-in"],
+    "price": 12500,
+    "currency": "EUR",
+    "description": {
+      "de": "Die legendäre Rolex Submariner Date ist eine Ikone unter den Taucheruhren. Mit ihrem zeitlosen Design und der außergewöhnlichen Robustheit ist sie der perfekte Begleiter für jeden Anlass. Das schwarze Zifferblatt mit Leuchtindizes garantiert optimale Ablesbarkeit.",
+      "en": "The legendary Rolex Submariner Date is an icon among diving watches. With its timeless design and exceptional robustness, it is the perfect companion for any occasion. The black dial with luminous indices guarantees optimal readability."
+    },
+    "images": [
+      "/products/watches/rolex-submariner-1.jpg",
+      "/products/watches/rolex-submariner-2.jpg",
+      "/products/watches/rolex-submariner-3.jpg"
+    ],
+    "specifications": {
+      "referenceNumber": "116610LN",
+      "year": "2018",
+      "condition": "Excellent",
+      "boxAndPapers": "Complete Set",
+      "caseSize": "40mm",
+      "movement": "Automatic Cal. 3135"
+    }
+  },
+  {
+    "id": "w002",
+    "title": "Patek Philippe Nautilus",
+    "slug": "patek-philippe-nautilus-5711-1a",
+    "category": "watch",
+    "collection": ["featured"],
+    "price": null,
+    "currency": "EUR",
+    "description": {
+      "de": "Der Patek Philippe Nautilus 5711/1A ist eine der begehrtesten Luxusuhren weltweit. Die elegante Sportuhr aus Edelstahl vereint sportliches Design mit höchster Uhrmacherkunst. Ein zeitloser Klassiker für anspruchsvolle Sammler.",
+      "en": "The Patek Philippe Nautilus 5711/1A is one of the most sought-after luxury watches worldwide. The elegant sports watch in stainless steel combines sporty design with the highest watchmaking craftsmanship. A timeless classic for discerning collectors."
+    },
+    "images": [
+      "/products/watches/patek-nautilus-1.jpg",
+      "/products/watches/patek-nautilus-2.jpg"
+    ],
+    "specifications": {
+      "referenceNumber": "5711/1A-010",
+      "year": "2020",
+      "condition": "Unworn",
+      "boxAndPapers": "Complete Set",
+      "caseSize": "40mm",
+      "movement": "Automatic Cal. 324 S C"
+    }
+  },
+  {
+    "id": "w003",
+    "title": "Audemars Piguet Royal Oak",
+    "slug": "audemars-piguet-royal-oak-15400st",
+    "category": "watch",
+    "collection": ["new-in"],
+    "price": 28900,
+    "currency": "EUR",
+    "description": {
+      "de": "Die Audemars Piguet Royal Oak ist eine Legende der Uhrmacherei. Mit ihrem markanten achteckigen Gehäuse und dem integrierten Armband definierte sie das Genre der Luxus-Sportuhren. Ein Meisterwerk der Haute Horlogerie.",
+      "en": "The Audemars Piguet Royal Oak is a legend of watchmaking. With its distinctive octagonal case and integrated bracelet, it defined the luxury sports watch genre. A masterpiece of haute horlogerie."
+    },
+    "images": [
+      "/products/watches/ap-royal-oak-1.jpg",
+      "/products/watches/ap-royal-oak-2.jpg",
+      "/products/watches/ap-royal-oak-3.jpg",
+      "/products/watches/ap-royal-oak-4.jpg"
+    ],
+    "specifications": {
+      "referenceNumber": "15400ST.OO.1220ST.01",
+      "year": "2019",
+      "condition": "Very Good",
+      "boxAndPapers": "Box and Papers",
+      "caseSize": "41mm",
+      "movement": "Automatic Cal. 3120"
+    }
+  },
+  {
+    "id": "p001",
+    "title": "Creed Aventus",
+    "slug": "creed-aventus-edp-100ml",
+    "category": "perfume",
+    "collection": ["featured"],
+    "price": 385,
+    "currency": "EUR",
+    "description": {
+      "de": "Creed Aventus ist ein legendärer Herrenduft, der Kraft und Eleganz vereint. Die fruchtig-holzige Komposition mit Ananas, Bergamotte und Eichenmoos ist perfekt für den selbstbewussten Mann. Ein zeitloser Klassiker seit 2010.",
+      "en": "Creed Aventus is a legendary men's fragrance that combines strength and elegance. The fruity-woody composition with pineapple, bergamot and oakmoss is perfect for the confident man. A timeless classic since 2010."
+    },
+    "images": [
+      "/products/perfumes/creed-aventus-1.jpg",
+      "/products/perfumes/creed-aventus-2.jpg"
+    ],
+    "specifications": {
+      "size": "100ml",
+      "concentration": "Eau de Parfum",
+      "topNotes": "Ananas, Bergamotte, Schwarze Johannisbeere",
+      "heartNotes": "Rosa Pfeffer, Birke, Patschuli",
+      "baseNotes": "Eichenmoos, Vanille, Ambergris",
+      "gender": "Herren / Unisex"
+    }
+  },
+  {
+    "id": "p002",
+    "title": "Tom Ford Oud Wood",
+    "slug": "tom-ford-oud-wood-edp-50ml",
+    "category": "perfume",
+    "collection": ["new-in", "featured"],
+    "price": 245,
+    "currency": "EUR",
+    "description": {
+      "de": "Tom Ford Oud Wood ist ein luxuriöser orientalischer Duft mit seltenen Oud-Hölzern, exotischen Gewürzen und kostbarem Sandelholz. Eine sinnliche und raffinierte Komposition für besondere Momente.",
+      "en": "Tom Ford Oud Wood is a luxurious oriental fragrance with rare oud woods, exotic spices and precious sandalwood. A sensual and refined composition for special moments."
+    },
+    "images": [
+      "/products/perfumes/tom-ford-oud-wood-1.jpg",
+      "/products/perfumes/tom-ford-oud-wood-2.jpg",
+      "/products/perfumes/tom-ford-oud-wood-3.jpg"
+    ],
+    "specifications": {
+      "size": "50ml",
+      "concentration": "Eau de Parfum",
+      "topNotes": "Rosa Pfeffer, Kardamom",
+      "heartNotes": "Oud, Sandelholz, Vetiver",
+      "baseNotes": "Tonkabohne, Amber, Vanille",
+      "gender": "Unisex"
+    }
+  }
+]

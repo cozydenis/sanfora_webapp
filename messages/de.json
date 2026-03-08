@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "watches": "Uhren",
+    "perfumes": "Parfüms",
+    "newIn": "Neuheiten",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "faq": "FAQ",
+    "impressum": "Impressum"
+  },
+  "home": {
+    "hero": {
+      "title": "Sanfora Time Pieces",
+      "subtitle": "Exklusive Uhren & Luxusparfüms",
+      "cta": "Kollektion entdecken"
+    },
+    "featured": {
+      "title": "Neuheiten",
+      "viewAll": "Alle Neuheiten ansehen",
+      "noProducts": "Keine neuen Produkte verfügbar"
+    }
+  },
+  "watches": {
+    "title": "Uhren",
+    "subtitle": "Entdecken Sie unsere exklusive Uhrenkollektion",
+    "noProducts": "Keine Uhren verfügbar"
+  },
+  "perfumes": {
+    "title": "Parfüms",
+    "subtitle": "Entdecken Sie unsere exklusive Parfümkollektion",
+    "noProducts": "Keine Parfüms verfügbar"
+  },
+  "newIn": {
+    "title": "Neuheiten",
+    "subtitle": "Die neuesten Ergänzungen unserer Kollektion",
+    "noProducts": "Keine neuen Produkte verfügbar"
+  },
+  "about": {
+    "title": "Über Sanfora Time Pieces",
+    "subtitle": "Unsere Geschichte",
+    "description": "Sanfora Time Pieces steht für Exzellenz in der Welt der Luxusuhren und erlesenen Düfte. Seit unserer Gründung widmen wir uns der Kunst der Zeitnahme und der Kreation unvergesslicher Dufterlebnisse."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir freuen uns auf Ihre Nachricht",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Senden"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Antworten auf Ihre Fragen"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "subtitle": "Rechtliche Informationen"
+  },
+  "product": {
+    "viewDetails": "Details ansehen",
+    "price": "Preis",
+    "brand": "Marke",
+    "category": "Kategorie",
+    "specifications": "Spezifikationen",
+    "inquire": "Anfrage senden",
+    "category.watches": "Uhren",
+    "category.perfumes": "Parfüms",
+    "breadcrumb.home": "Startseite",
+    "whatsapp": {
+      "inquire": "Per WhatsApp anfragen",
+      "responseTime": "Wir antworten in der Regel innerhalb von 24 Stunden"
+    },
+    "specs": {
+      "referenceNumber": "Referenznummer",
+      "year": "Jahr",
+      "condition": "Zustand",
+      "boxAndPapers": "Box & Papiere",
+      "caseSize": "Gehäusegröße",
+      "movement": "Uhrwerk",
+      "size": "Größe",
+      "concentration": "Konzentration",
+      "topNotes": "Kopfnote",
+      "heartNotes": "Herznote",
+      "baseNotes": "Basisnote",
+      "gender": "Für"
+    }
+  },
+  "footer": {
+    "tagline": "Exklusive Uhren & Luxusparfüms",
+    "quickLinks": "Schnellzugriff",
+    "customerService": "Kundenservice",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "allRightsReserved": "Alle Rechte vorbehalten",
+    "madeWith": "Erstellt mit",
+    "forLuxury": "für Luxus"
+  }
+}
