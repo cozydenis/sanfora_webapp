@@ -1,46 +1,110 @@
 import { Product, WatchProduct, PerfumeProduct } from './types';
-import productsData from '@/data/products.json';
+import { neon } from '@neondatabase/serverless';
 
-export function getAllProducts(): Product[] {
-  return productsData as Product[];
+// Helper function to transform database row to Product
+function rowToProduct(row: any): Product {
+  return {
+    id: row.id,
+    title: row.title,
+    slug: row.slug,
+    category: row.category,
+    collection: row.collection || [],
+    price: row.price ? parseFloat(row.price) : null,
+    currency: row.currency,
+    description: {
+      de: row.description_de,
+      en: row.description_en,
+    },
+    images: row.images || [],
+    specifications: row.specifications,
+  } as Product;
 }
 
-export function getWatches(): WatchProduct[] {
-  return productsData.filter(p => p.category === 'watch') as WatchProduct[];
+export async function getAllProducts(): Promise<Product[]> {
+  const sql = neon(process.env.DATABASE_URL!);
+  const rows = await sql`
+    SELECT * FROM products
+    ORDER BY created_at DESC
+  `;
+  return rows.map(rowToProduct);
 }
 
-export function getPerfumes(): PerfumeProduct[] {
-  return productsData.filter(p => p.category === 'perfume') as PerfumeProduct[];
+export async function getWatches(): Promise<WatchProduct[]> {
+  const sql = neon(process.env.DATABASE_URL!);
+  const rows = await sql`
+    SELECT * FROM products
+    WHERE category = 'watch'
+    ORDER BY created_at DESC
+  `;
+  return rows.map(rowToProduct) as WatchProduct[];
 }
 
-export function getNewProducts(): Product[] {
-  return getAllProducts().filter(product =>
-    product.collection.includes('new-in')
-  );
+export async function getPerfumes(): Promise<PerfumeProduct[]> {
+  const sql = neon(process.env.DATABASE_URL!);
+  const rows = await sql`
+    SELECT * FROM products
+    WHERE category = 'perfume'
+    ORDER BY created_at DESC
+  `;
+  return rows.map(rowToProduct) as PerfumeProduct[];
 }
 
-export function getFeaturedProducts(): Product[] {
-  return getAllProducts().filter(product =>
-    product.collection.includes('featured')
-  );
+export async function getNewProducts(): Promise<Product[]> {
+  const sql = neon(process.env.DATABASE_URL!);
+  const rows = await sql`
+    SELECT * FROM products
+    WHERE 'new-in' = ANY(collection)
+    ORDER BY created_at DESC
+  `;
+  return rows.map(rowToProduct);
 }
 
-export function getProductById(id: string): Product | undefined {
-  return getAllProducts().find(product => product.id === id);
+export async function getFeaturedProducts(): Promise<Product[]> {
+  const sql = neon(process.env.DATABASE_URL!);
+  const rows = await sql`
+    SELECT * FROM products
+    WHERE 'featured' = ANY(collection)
+    ORDER BY created_at DESC
+  `;
+  return rows.map(rowToProduct);
 }
 
-export function getProductBySlug(slug: string): Product | undefined {
-  return getAllProducts().find(product => product.slug === slug);
+export async function getProductById(id: string): Promise<Product | undefined> {
+  const sql = neon(process.env.DATABASE_URL!);
+  const rows = await sql`
+    SELECT * FROM products
+    WHERE id = ${id}
+  `;
+  return rows.length > 0 ? rowToProduct(rows[0]) : undefined;
 }
 
-export function getProductsByCategory(category: 'watch' | 'perfume'): Product[] {
-  return getAllProducts().filter(product => product.category === category);
+export async function getProductBySlug(slug: string): Promise<Product | undefined> {
+  const sql = neon(process.env.DATABASE_URL!);
+  const rows = await sql`
+    SELECT * FROM products
+    WHERE slug = ${slug}
+  `;
+  return rows.length > 0 ? rowToProduct(rows[0]) : undefined;
 }
 
-export function getProductsByCollection(collection: string): Product[] {
-  return getAllProducts().filter(product =>
-    product.collection.includes(collection)
-  );
+export async function getProductsByCategory(category: 'watch' | 'perfume'): Promise<Product[]> {
+  const sql = neon(process.env.DATABASE_URL!);
+  const rows = await sql`
+    SELECT * FROM products
+    WHERE category = ${category}
+    ORDER BY created_at DESC
+  `;
+  return rows.map(rowToProduct);
+}
+
+export async function getProductsByCollection(collection: string): Promise<Product[]> {
+  const sql = neon(process.env.DATABASE_URL!);
+  const rows = await sql`
+    SELECT * FROM products
+    WHERE ${collection} = ANY(collection)
+    ORDER BY created_at DESC
+  `;
+  return rows.map(rowToProduct);
 }
 
 export function formatPrice(price: number | null, currency: string, locale: 'de' | 'en'): string {

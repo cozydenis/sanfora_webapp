@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Container } from '@/components/ui/Container';
 import { ProductCard } from '@/components/products/ProductCard';
+import { OceanHero } from '@/components/ui/aurora-hero-bg-2';
 import { getNewProducts } from '@/lib/products';
 import { generateMetadata as genMeta } from '@/lib/metadata';
 import type { Metadata } from 'next';
@@ -25,31 +26,15 @@ export default function HomePage({ params: { locale } }: Props) {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative h-[85vh] min-h-[600px] flex items-center justify-center bg-luxury-black">
-        {/* Background Image Overlay */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-luxury-black/40 via-luxury-black/30 to-luxury-black/60 z-10" />
-          {/* Placeholder for hero image - replace with actual image */}
-          <div className="w-full h-full bg-luxury-gray-900" />
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-20 text-center px-4 max-w-4xl mx-auto animate-fadeIn">
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-luxury-white mb-8 tracking-tight leading-tight">
-            {t('hero.title')}
-          </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-luxury-gray-200 font-light mb-12 tracking-wide">
-            {t('hero.subtitle')}
-          </p>
-          <Link
-            href={`/${locale}/new-in`}
-            className="inline-block border-2 border-luxury-white text-luxury-white px-10 py-4 text-sm tracking-widest uppercase font-light hover:bg-luxury-white hover:text-luxury-black transition-all duration-300"
-          >
-            {t('hero.cta')}
-          </Link>
-        </div>
-      </section>
+      {/* Hero Section with Rolex Pepsi Aurora Background */}
+      <OceanHero
+        title={t('hero.title')}
+        description={t('hero.subtitle')}
+        primaryAction={{
+          label: t('hero.cta'),
+          href: `/${locale}/new-in`,
+        }}
+      />
 
       {/* New In Section */}
       <section className="py-24 md:py-32 lg:py-40 bg-luxury-white">

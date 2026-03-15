@@ -65,7 +65,7 @@ export default function PerfumeDetailPage({ params: { locale, slug } }: Props) {
             href={`/${locale}/perfumes`}
             className="text-luxury-gray-500 hover:text-luxury-black transition-colors"
           >
-            {t('category.perfumes')}
+            {t('categories.perfumes')}
           </Link>
           <span className="mx-3 text-luxury-gray-400">/</span>
           <span className="text-luxury-black">{product.title}</span>

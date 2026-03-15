@@ -64,9 +64,13 @@
     "category": "Kategorie",
     "specifications": "Spezifikationen",
     "inquire": "Anfrage senden",
-    "category.watches": "Uhren",
-    "category.perfumes": "Parfüms",
-    "breadcrumb.home": "Startseite",
+    "categories": {
+      "watches": "Uhren",
+      "perfumes": "Parfüms"
+    },
+    "breadcrumb": {
+      "home": "Startseite"
+    },
     "whatsapp": {
       "inquire": "Per WhatsApp anfragen",
       "responseTime": "Wir antworten in der Regel innerhalb von 24 Stunden"

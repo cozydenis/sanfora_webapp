@@ -64,9 +64,13 @@
     "category": "Category",
     "specifications": "Specifications",
     "inquire": "Make an Inquiry",
-    "category.watches": "Watches",
-    "category.perfumes": "Perfumes",
-    "breadcrumb.home": "Home",
+    "categories": {
+      "watches": "Watches",
+      "perfumes": "Perfumes"
+    },
+    "breadcrumb": {
+      "home": "Home"
+    },
     "whatsapp": {
       "inquire": "Inquire via WhatsApp",
       "responseTime": "We typically respond within 24 hours"

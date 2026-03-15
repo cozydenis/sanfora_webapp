@@ -65,7 +65,7 @@ export default function WatchDetailPage({ params: { locale, slug } }: Props) {
             href={`/${locale}/watches`}
             className="text-luxury-gray-500 hover:text-luxury-black transition-colors"
           >
-            {t('category.watches')}
+            {t('categories.watches')}
           </Link>
           <span className="mx-3 text-luxury-gray-400">/</span>
           <span className="text-luxury-black">{product.title}</span>
