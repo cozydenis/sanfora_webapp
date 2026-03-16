@@ -19,25 +19,25 @@ export function ProductCard({ product, locale }: ProductCardProps) {
     >
       {/* Product Image */}
       <div className="relative aspect-[3/4] bg-luxury-gray-100 mb-6 overflow-hidden">
-        {/* Placeholder background */}
-        <div className="absolute inset-0 bg-luxury-gray-100 flex items-center justify-center">
-          <div className="text-center p-8">
-            <p className="text-luxury-gray-400 text-xs font-light tracking-wider uppercase mb-2">
-              {product.category === 'watch' ? 'Timepiece' : 'Fragrance'}
-            </p>
-            <p className="text-luxury-gray-500 text-sm font-light">
-              {product.title}
-            </p>
+        {product.images && product.images.length > 0 ? (
+          <Image
+            src={product.images[0]}
+            alt={product.title}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-700"
+          />
+        ) : (
+          <div className="absolute inset-0 bg-luxury-gray-100 flex items-center justify-center">
+            <div className="text-center p-8">
+              <p className="text-luxury-gray-400 text-xs font-light tracking-wider uppercase mb-2">
+                {product.category === 'watch' ? 'Timepiece' : 'Fragrance'}
+              </p>
+              <p className="text-luxury-gray-500 text-sm font-light">
+                {product.title}
+              </p>
+            </div>
           </div>
-        </div>
-
-        {/* Image would go here */}
-        {/* <Image
-          src={product.images[0]}
-          alt={product.title}
-          fill
-          className="object-cover group-hover:scale-105 transition-transform duration-700"
-        /> */}
+        )}
 
         {/* New Badge */}
         {product.collection.includes('new-in') && (

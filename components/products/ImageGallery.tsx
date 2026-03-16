@@ -23,26 +23,13 @@ export function ImageGallery({ images, productTitle }: ImageGalleryProps) {
     <div className="space-y-4">
       {/* Main Image */}
       <div className="relative aspect-[3/4] bg-luxury-gray-100 overflow-hidden group">
-        {/* Placeholder - replace with actual image when available */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center p-12">
-            <p className="text-luxury-gray-400 text-sm font-light tracking-wider uppercase mb-4">
-              Image {selectedIndex + 1} of {images.length}
-            </p>
-            <p className="text-luxury-gray-500 font-light">
-              {productTitle}
-            </p>
-          </div>
-        </div>
-
-        {/* Uncomment when you have real images */}
-        {/* <Image
+        <Image
           src={images[selectedIndex]}
           alt={`${productTitle} - Image ${selectedIndex + 1}`}
           fill
           className="object-cover"
           priority={selectedIndex === 0}
-        /> */}
+        />
       </div>
 
       {/* Thumbnail Strip */}
@@ -58,20 +45,12 @@ export function ImageGallery({ images, productTitle }: ImageGalleryProps) {
                   : 'opacity-60 hover:opacity-100'
               }`}
             >
-              {/* Placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-luxury-gray-400 text-xs">
-                  {index + 1}
-                </p>
-              </div>
-
-              {/* Uncomment when you have real images */}
-              {/* <Image
+              <Image
                 src={image}
                 alt={`${productTitle} thumbnail ${index + 1}`}
                 fill
                 className="object-cover"
-              /> */}
+              />
             </button>
           ))}
         </div>
