@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useId } from 'react';
+import Image from 'next/image';
 
 interface ImageUploaderProps {
   onUploadComplete: (url: string) => void;
@@ -80,11 +81,14 @@ export function ImageUploader({ onUploadComplete, onRemove, existingUrl }: Image
       >
         {preview ? (
           <div className="space-y-4">
-            <img
-              src={preview}
-              alt="Vorschau"
-              className="max-h-40 mx-auto rounded-md object-cover"
-            />
+            <div className="relative w-full h-40">
+              <Image
+                src={preview}
+                alt="Vorschau"
+                fill
+                className="mx-auto rounded-md object-contain"
+              />
+            </div>
             <div className="flex gap-2 justify-center">
               <p className="text-sm text-luxury-gray-600">
                 {uploading ? 'Lädt hoch...' : 'Klicken zum Ändern'}
