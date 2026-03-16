@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
+import { ImageUploader } from '@/components/admin/ImageUploader';
 import type { Product, ProductCategory, WatchProduct, PerfumeProduct } from '@/lib/types';
 
 export default function EditProductPage() {
@@ -20,7 +21,7 @@ export default function EditProductPage() {
     currency: 'EUR',
     descriptionDE: '',
     descriptionEN: '',
-    images: '',
+    images: [] as string[],
     collection: [] as string[],
     // Watch fields
     referenceNumber: '',
@@ -74,7 +75,7 @@ export default function EditProductPage() {
         currency: product.currency,
         descriptionDE: product.description.de,
         descriptionEN: product.description.en,
-        images: product.images.join('\n'),
+        images: product.images,
         collection: product.collection,
       };
 
@@ -166,7 +167,7 @@ export default function EditProductPage() {
         de: formData.descriptionDE,
         en: formData.descriptionEN,
       },
-      images: formData.images.split('\n').filter(img => img.trim()),
+      images: formData.images,
       specifications: category === 'watch'
         ? {
           referenceNumber: formData.referenceNumber,
@@ -334,18 +335,39 @@ export default function EditProductPage() {
           </div>
 
           <div>
-            <label htmlFor="images" className="block text-sm font-semibold text-luxury-black mb-2">
-              Image URLs (one per line) *
+            <label className="block text-sm font-semibold text-luxury-black mb-2">
+              Produktbilder *
             </label>
-            <textarea
-              id="images"
-              name="images"
-              value={formData.images}
-              onChange={handleInputChange}
-              rows={3}
-              className="w-full px-4 py-2 border border-luxury-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-luxury-black font-mono text-sm"
-              required
-            />
+            <p className="text-sm text-luxury-gray-600 mb-4">
+              Laden Sie bis zu 5 Bilder hoch. Das erste Bild wird als Hauptbild verwendet.
+            </p>
+            <div className="space-y-4">
+              {[0, 1, 2, 3, 4].map((index) => (
+                <div key={index}>
+                  <p className="text-xs text-luxury-gray-500 mb-2">
+                    Bild {index + 1} {index === 0 && '(Hauptbild)'}
+                  </p>
+                  <ImageUploader
+                    existingUrl={formData.images[index]}
+                    onUploadComplete={(url) => {
+                      const newImages = [...formData.images];
+                      newImages[index] = url;
+                      setFormData(prev => ({ ...prev, images: newImages.filter(Boolean) }));
+                    }}
+                    onRemove={() => {
+                      const newImages = [...formData.images];
+                      newImages.splice(index, 1);
+                      setFormData(prev => ({ ...prev, images: newImages }));
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+            {formData.images.length === 0 && (
+              <p className="text-sm text-red-600 mt-2">
+                Bitte laden Sie mindestens ein Bild hoch
+              </p>
+            )}
           </div>
 
           {/* Collections */}
