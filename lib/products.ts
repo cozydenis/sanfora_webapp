@@ -142,7 +142,7 @@ export function formatPrice(price: number | null, currency: string, locale: 'de'
     return locale === 'de' ? 'Preis auf Anfrage' : 'Price on request';
   }
 
-  return price.toLocaleString(locale === 'de' ? 'de-DE' : 'en-US', {
+  return price.toLocaleString(locale === 'de' ? 'de-CH' : 'en-CH', {
     style: 'currency',
     currency: currency,
   });

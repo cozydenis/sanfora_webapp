@@ -187,7 +187,7 @@ export default function AdminDashboardPage() {
                     </span>
                   </td>
                   <td className="px-6 py-4 text-sm text-luxury-black">
-                    {product.price ? `€${product.price.toLocaleString()}` : 'Auf Anfrage'}
+                    {product.price ? `CHF ${product.price.toLocaleString()}` : 'Auf Anfrage'}
                   </td>
                   <td className="px-6 py-4 text-sm text-luxury-gray-600">
                     {product.collection.join(', ')}

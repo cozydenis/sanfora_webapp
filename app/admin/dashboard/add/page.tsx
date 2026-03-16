@@ -14,7 +14,7 @@ export default function AddProductPage() {
     title: '',
     slug: '',
     price: '',
-    currency: 'EUR',
+    currency: 'CHF',
     descriptionDE: '',
     descriptionEN: '',
     images: [] as string[],

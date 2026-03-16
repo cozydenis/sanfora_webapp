@@ -18,7 +18,7 @@ export default function EditProductPage() {
     title: '',
     slug: '',
     price: '',
-    currency: 'EUR',
+    currency: 'CHF',
     descriptionDE: '',
     descriptionEN: '',
     images: [] as string[],

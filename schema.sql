@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS products (
   category TEXT NOT NULL CHECK (category IN ('watch', 'perfume')),
   collection TEXT[] DEFAULT ARRAY[]::TEXT[],
   price DECIMAL(10, 2),
-  currency TEXT DEFAULT 'EUR',
+  currency TEXT DEFAULT 'CHF',
   description_de TEXT NOT NULL,
   description_en TEXT NOT NULL,
   images TEXT[] DEFAULT ARRAY[]::TEXT[],
