@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { neon } from '@neondatabase/serverless';
+import { revalidatePath } from 'next/cache';
 import type { Product } from '@/lib/types';
 import { verifyAuthFromRequest } from '@/lib/auth';
 
@@ -99,6 +100,18 @@ export async function PUT(
       );
     }
 
+    // Revalidate all pages that might show this product
+    revalidatePath('/de');
+    revalidatePath('/en');
+    revalidatePath('/de/new-in');
+    revalidatePath('/en/new-in');
+    revalidatePath('/de/watches');
+    revalidatePath('/en/watches');
+    revalidatePath('/de/perfumes');
+    revalidatePath('/en/perfumes');
+    revalidatePath(`/de/${updatedProduct.category === 'watch' ? 'watches' : 'perfumes'}/${updatedProduct.slug}`);
+    revalidatePath(`/en/${updatedProduct.category === 'watch' ? 'watches' : 'perfumes'}/${updatedProduct.slug}`);
+
     return NextResponse.json({ success: true, product: updatedProduct });
   } catch (error) {
     console.error('Error updating product:', error);
@@ -133,6 +146,16 @@ export async function DELETE(
         { status: 404 }
       );
     }
+
+    // Revalidate all pages that might have shown this product
+    revalidatePath('/de');
+    revalidatePath('/en');
+    revalidatePath('/de/new-in');
+    revalidatePath('/en/new-in');
+    revalidatePath('/de/watches');
+    revalidatePath('/en/watches');
+    revalidatePath('/de/perfumes');
+    revalidatePath('/en/perfumes');
 
     return NextResponse.json({ success: true });
   } catch (error) {
