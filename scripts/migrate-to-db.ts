@@ -2,9 +2,10 @@
  * Migration script to move products from JSON file to Neon Postgres database
  *
  * Run this script ONCE after setting up your database:
- * npx tsx scripts/migrate-to-db.ts
+ * npx dotenv -e .env.local tsx scripts/migrate-to-db.ts
  */
 
+import 'dotenv/config';
 import { neon } from '@neondatabase/serverless';
 import productsData from '../data/products.json';
 import type { Product } from '../lib/types';

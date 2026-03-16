@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import { Container } from '@/components/ui/Container';
 import { PageHeader } from '@/components/ui/PageHeader';
@@ -22,9 +22,9 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   });
 }
 
-export default function ImpressumPage({ params: { locale } }: Props) {
+export default async function ImpressumPage({ params: { locale } }: Props) {
   setRequestLocale(locale);
-  const t = useTranslations('impressum');
+  const t = await getTranslations('impressum');
 
   return (
     <>

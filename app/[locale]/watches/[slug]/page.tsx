@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import { Container } from '@/components/ui/Container';
 import { ImageGallery } from '@/components/products/ImageGallery';
@@ -14,15 +14,15 @@ type Props = {
   params: { locale: string; slug: string };
 };
 
-export function generateStaticParams() {
-  const watches = getWatches();
+export async function generateStaticParams() {
+  const watches = await getWatches();
   return watches.map((watch) => ({
     slug: watch.slug,
   }));
 }
 
 export async function generateMetadata({ params: { locale, slug } }: Props): Promise<Metadata> {
-  const product = getProductBySlug(slug);
+  const product = await getProductBySlug(slug);
 
   if (!product || !isWatchProduct(product)) {
     return {};
@@ -40,10 +40,10 @@ export async function generateMetadata({ params: { locale, slug } }: Props): Pro
   });
 }
 
-export default function WatchDetailPage({ params: { locale, slug } }: Props) {
+export default async function WatchDetailPage({ params: { locale, slug } }: Props) {
   setRequestLocale(locale);
-  const t = useTranslations('product');
-  const product = getProductBySlug(slug);
+  const t = await getTranslations('product');
+  const product = await getProductBySlug(slug);
 
   if (!product || !isWatchProduct(product)) {
     notFound();

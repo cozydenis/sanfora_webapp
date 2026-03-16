@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import { Container } from '@/components/ui/Container';
 import { ProductCard } from '@/components/products/ProductCard';
@@ -19,10 +19,11 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   });
 }
 
-export default function HomePage({ params: { locale } }: Props) {
+export default async function HomePage({ params: { locale } }: Props) {
   setRequestLocale(locale);
-  const t = useTranslations('home');
-  const newProducts = getNewProducts().slice(0, 4);
+  const t = await getTranslations('home');
+  const allNewProducts = await getNewProducts();
+  const newProducts = allNewProducts.slice(0, 4);
 
   return (
     <>

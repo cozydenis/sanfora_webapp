@@ -37,7 +37,7 @@ export default function AdminDashboardPage() {
     try {
       const response = await fetch('/api/products');
       const data = await response.json();
-      setProducts(data);
+      setProducts(Array.isArray(data) ? data : []);
     } catch (error) {
       console.error('Error fetching products:', error);
     } finally {
@@ -116,8 +116,8 @@ export default function AdminDashboardPage() {
           <button
             onClick={() => setFilter('all')}
             className={`px-4 py-2 rounded-md transition-colors ${filter === 'all'
-                ? 'bg-luxury-black text-white'
-                : 'bg-white text-luxury-black border border-luxury-gray-300'
+              ? 'bg-luxury-black text-white'
+              : 'bg-white text-luxury-black border border-luxury-gray-300'
               }`}
           >
             Alle ({products.length})
@@ -125,8 +125,8 @@ export default function AdminDashboardPage() {
           <button
             onClick={() => setFilter('watch')}
             className={`px-4 py-2 rounded-md transition-colors ${filter === 'watch'
-                ? 'bg-luxury-black text-white'
-                : 'bg-white text-luxury-black border border-luxury-gray-300'
+              ? 'bg-luxury-black text-white'
+              : 'bg-white text-luxury-black border border-luxury-gray-300'
               }`}
           >
             Uhren ({products.filter(p => p.category === 'watch').length})
@@ -134,8 +134,8 @@ export default function AdminDashboardPage() {
           <button
             onClick={() => setFilter('perfume')}
             className={`px-4 py-2 rounded-md transition-colors ${filter === 'perfume'
-                ? 'bg-luxury-black text-white'
-                : 'bg-white text-luxury-black border border-luxury-gray-300'
+              ? 'bg-luxury-black text-white'
+              : 'bg-white text-luxury-black border border-luxury-gray-300'
               }`}
           >
             Parfüms ({products.filter(p => p.category === 'perfume').length})

@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import { Container } from '@/components/ui/Container';
 import { PageHeader } from '@/components/ui/PageHeader';
@@ -24,10 +24,10 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   });
 }
 
-export default function NewInPage({ params: { locale } }: Props) {
+export default async function NewInPage({ params: { locale } }: Props) {
   setRequestLocale(locale);
-  const t = useTranslations('newIn');
-  const newProducts = getNewProducts();
+  const t = await getTranslations('newIn');
+  const newProducts = await getNewProducts();
 
   return (
     <>
