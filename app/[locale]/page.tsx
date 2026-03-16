@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import { Container } from '@/components/ui/Container';
 import { ProductCard } from '@/components/products/ProductCard';
-import { OceanHero } from '@/components/ui/aurora-hero-bg-2';
+import { LuxuryHero } from '@/components/ui/LuxuryHero';
 import { getNewProducts } from '@/lib/products';
 import { generateMetadata as genMeta } from '@/lib/metadata';
 import type { Metadata } from 'next';
@@ -27,14 +27,15 @@ export default async function HomePage({ params: { locale } }: Props) {
 
   return (
     <>
-      {/* Hero Section with Rolex Pepsi Aurora Background */}
-      <OceanHero
+      {/* Hero Section */}
+      <LuxuryHero
         title={t('hero.title')}
         description={t('hero.subtitle')}
         primaryAction={{
           label: t('hero.cta'),
           href: `/${locale}/new-in`,
         }}
+        backgroundImage="/imgs/hero.jpg"
       />
 
       {/* New In Section */}
