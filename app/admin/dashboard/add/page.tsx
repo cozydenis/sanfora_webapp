@@ -10,7 +10,6 @@ export default function AddProductPage() {
   const router = useRouter();
   const [category, setCategory] = useState<ProductCategory>('watch');
   const [formData, setFormData] = useState({
-    id: '',
     title: '',
     slug: '',
     price: '',
@@ -84,8 +83,11 @@ export default function AddProductPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    // Auto-generate unique ID based on category and timestamp
+    const uniqueId = `${category === 'watch' ? 'w' : 'p'}-${Date.now()}`;
+
     const product: Product = {
-      id: formData.id,
+      id: uniqueId,
       title: formData.title,
       slug: formData.slug,
       category,
@@ -182,44 +184,16 @@ export default function AddProductPage() {
           </div>
 
           {/* Basic Information */}
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label htmlFor="id" className="block text-sm font-semibold text-luxury-black mb-2">
-                Product ID *
-              </label>
-              <input
-                type="text"
-                id="id"
-                name="id"
-                value={formData.id}
-                onChange={handleInputChange}
-                className="w-full px-4 py-2 border border-luxury-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-luxury-black"
-                placeholder="e.g., w001 or p001"
-                required
-              />
-            </div>
+          <div className="space-y-4">
+            <p className="text-sm text-luxury-gray-600">
+              Product ID wird automatisch generiert
+            </p>
 
             <div>
-              <label htmlFor="price" className="block text-sm font-semibold text-luxury-black mb-2">
-                Price (€)
+              <label htmlFor="title" className="block text-sm font-semibold text-luxury-black mb-2">
+                Title *
               </label>
               <input
-                type="number"
-                id="price"
-                name="price"
-                value={formData.price}
-                onChange={handleInputChange}
-                className="w-full px-4 py-2 border border-luxury-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-luxury-black"
-                placeholder="Leave empty for POA"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="title" className="block text-sm font-semibold text-luxury-black mb-2">
-              Title *
-            </label>
-            <input
               type="text"
               id="title"
               name="title"
@@ -246,6 +220,22 @@ export default function AddProductPage() {
               required
             />
           </div>
+
+          <div>
+            <label htmlFor="price" className="block text-sm font-semibold text-luxury-black mb-2">
+              Preis (CHF)
+            </label>
+            <input
+              type="number"
+              id="price"
+              name="price"
+              value={formData.price}
+              onChange={handleInputChange}
+              className="w-full px-4 py-2 border border-luxury-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-luxury-black"
+              placeholder="Leer lassen für Preis auf Anfrage"
+            />
+          </div>
+        </div>
 
           <div>
             <label htmlFor="descriptionDE" className="block text-sm font-semibold text-luxury-black mb-2">
