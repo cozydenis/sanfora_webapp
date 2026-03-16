@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useId } from 'react';
 
 interface ImageUploaderProps {
   onUploadComplete: (url: string) => void;
@@ -11,6 +11,7 @@ interface ImageUploaderProps {
 export function ImageUploader({ onUploadComplete, onRemove, existingUrl }: ImageUploaderProps) {
   const [uploading, setUploading] = useState(false);
   const [preview, setPreview] = useState<string | null>(existingUrl || null);
+  const inputId = useId();
 
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -70,11 +71,11 @@ export function ImageUploader({ onUploadComplete, onRemove, existingUrl }: Image
         accept="image/*"
         onChange={handleFileChange}
         className="hidden"
-        id={`image-upload-${Math.random()}`}
+        id={inputId}
         disabled={uploading}
       />
       <label
-        htmlFor={`image-upload-${Math.random()}`}
+        htmlFor={inputId}
         className={`cursor-pointer block ${uploading ? 'opacity-50' : ''}`}
       >
         {preview ? (
