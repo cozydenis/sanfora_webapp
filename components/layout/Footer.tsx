@@ -31,7 +31,7 @@ export function Footer() {
               {/* Social Media */}
               <div className="flex items-center gap-4">
                 <a
-                  href="https://instagram.com/sanfora_timepieces"
+                  href="https://instagram.com/sanforatimepiece"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-luxury-gray-300 hover:text-luxury-white transition-colors"
