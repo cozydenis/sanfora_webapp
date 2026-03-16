@@ -67,11 +67,3 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// Increase the file size limit for image uploads (default is 4MB)
-export const config = {
-  api: {
-    bodyParser: {
-      sizeLimit: '10mb',
-    },
-  },
-};
