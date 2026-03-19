@@ -169,6 +169,7 @@ export default async function PerfumeDetailPage({ params: { locale, slug } }: Pr
                   productTitle={product.title}
                   productUrl={productUrl}
                   label={t('whatsapp.inquire')}
+                  locale={localeTyped}
                 />
                 <p className="text-xs text-center text-luxury-gray-500 font-light">
                   {t('whatsapp.responseTime')}

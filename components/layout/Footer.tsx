@@ -1,28 +1,19 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
-import { getWhatsAppLink, siteConfig, getRandomPhoneNumber } from '@/lib/config';
+import { getWhatsAppLink, siteConfig } from '@/lib/config';
 
 export function Footer() {
   const t = useTranslations();
   const locale = useLocale();
   const currentYear = new Date().getFullYear();
 
-  // Randomly select a phone number for load balancing
-  const [selectedPhone, setSelectedPhone] = useState(() => getRandomPhoneNumber());
-
-  useEffect(() => {
-    // Set random phone on mount (client-side only)
-    setSelectedPhone(getRandomPhoneNumber());
-  }, []);
-
   // WhatsApp link for footer
   const whatsappUrl = getWhatsAppLink(
     'general inquiry',
     `${process.env.NEXT_PUBLIC_SITE_URL || 'https://sanfora-timepieces.com'}/${locale}`,
-    selectedPhone.number
+    locale as 'de' | 'en'
   );
 
   return (
@@ -109,14 +100,6 @@ export function Footer() {
                   <Link href={`/${locale}/faq`} className="text-luxury-gray-300 hover:text-luxury-white transition-colors">
                     {t('nav.faq')}
                   </Link>
-                </li>
-                <li>
-                  <a
-                    href={`tel:${selectedPhone.number}`}
-                    className="text-luxury-gray-300 hover:text-luxury-white transition-colors"
-                  >
-                    {selectedPhone.display}
-                  </a>
                 </li>
                 <li>
                   <a

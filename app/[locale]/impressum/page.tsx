@@ -45,7 +45,7 @@ export default async function ImpressumPage({ params: { locale } }: Props) {
           <section>
             <h2 className="font-serif text-2xl text-luxury-black mb-4">Kontakt</h2>
             <p>
-              Telefon: +41 76 376 36 55 / +41 79 884 12 12<br />
+              WhatsApp: +41 79 884 12 12<br />
               E-Mail: Info@sanfora.ch
             </p>
           </section>

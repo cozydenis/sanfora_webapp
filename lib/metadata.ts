@@ -141,7 +141,7 @@ export function generateOrganizationJsonLd() {
     logo: `${siteMetadata.siteUrl}/imgs/logo.jpeg`,
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: siteConfig.whatsapp.phoneNumbers[0].display,
+      telephone: siteConfig.whatsapp.display,
       contactType: 'Customer Service',
       availableLanguage: ['de', 'en'],
     },

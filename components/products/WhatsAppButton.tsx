@@ -1,24 +1,16 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { getWhatsAppLink, getRandomPhoneNumber } from '@/lib/config';
+import { getWhatsAppLink } from '@/lib/config';
 
 interface WhatsAppButtonProps {
   productTitle: string;
   productUrl: string;
   label: string;
+  locale: 'de' | 'en';
 }
 
-export function WhatsAppButton({ productTitle, productUrl, label }: WhatsAppButtonProps) {
-  // Randomly select a phone number for load balancing
-  const [selectedPhone, setSelectedPhone] = useState(() => getRandomPhoneNumber());
-
-  useEffect(() => {
-    // Set random phone on mount (client-side only)
-    setSelectedPhone(getRandomPhoneNumber());
-  }, []);
-
-  const whatsappUrl = getWhatsAppLink(productTitle, productUrl, selectedPhone.number);
+export function WhatsAppButton({ productTitle, productUrl, label, locale }: WhatsAppButtonProps) {
+  const whatsappUrl = getWhatsAppLink(productTitle, productUrl, locale);
 
   return (
     <a
