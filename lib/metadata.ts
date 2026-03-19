@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { siteConfig } from './config';
 
 export const siteMetadata = {
   siteName: 'Sanfora Time Pieces',
@@ -140,13 +141,12 @@ export function generateOrganizationJsonLd() {
     logo: `${siteMetadata.siteUrl}/imgs/logo.jpeg`,
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+41799173326',
+      telephone: siteConfig.whatsapp.phoneNumbers[0].display,
       contactType: 'Customer Service',
       availableLanguage: ['de', 'en'],
     },
     sameAs: [
-      'https://instagram.com/sanfora_timepieces',
-      'https://facebook.com/sanfora',
+      'https://instagram.com/sanforatimepiece',
     ],
   };
 }

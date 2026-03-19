@@ -33,41 +33,41 @@ export default async function AboutPage({ params: { locale } }: Props) {
       <Container className="py-16">
         <div className="max-w-3xl mx-auto">
           <div className="prose prose-lg">
-            <p className="text-lg font-light text-luxury-gray-700 leading-relaxed mb-6">
-              {t('description')}
+            <p className="text-lg font-light text-luxury-gray-700 leading-relaxed mb-8">
+              {t('intro')}
             </p>
 
-            <div className="mt-12 space-y-8">
+            <div className="mt-12 space-y-10">
               <div>
                 <h2 className="font-serif text-2xl text-luxury-black mb-4">
-                  {t.rich('about.quality.title', { defaultMessage: 'Qualität & Exzellenz' })}
+                  {t('passion.title')}
                 </h2>
                 <p className="font-light text-luxury-gray-700 leading-relaxed">
-                  {t.rich('about.quality.text', {
-                    defaultMessage: 'Jedes Produkt in unserer Kollektion wird sorgfältig ausgewählt und repräsentiert höchste Handwerkskunst und zeitloses Design.'
-                  })}
+                  {t('passion.text')}
                 </p>
               </div>
 
               <div>
                 <h2 className="font-serif text-2xl text-luxury-black mb-4">
-                  {t.rich('about.passion.title', { defaultMessage: 'Unsere Leidenschaft' })}
+                  {t('philosophy.title')}
                 </h2>
                 <p className="font-light text-luxury-gray-700 leading-relaxed">
-                  {t.rich('about.passion.text', {
-                    defaultMessage: 'Wir sind leidenschaftlich daran interessiert, unseren Kunden einzigartige Luxuserlebnisse zu bieten, die sowohl die Zeit als auch die Sinne feiern.'
-                  })}
+                  {t('philosophy.text')}
                 </p>
               </div>
 
               <div>
                 <h2 className="font-serif text-2xl text-luxury-black mb-4">
-                  {t.rich('about.service.title', { defaultMessage: 'Persönlicher Service' })}
+                  {t('service.title')}
                 </h2>
                 <p className="font-light text-luxury-gray-700 leading-relaxed">
-                  {t.rich('about.service.text', {
-                    defaultMessage: 'Unser engagiertes Team steht Ihnen jederzeit zur Verfügung, um Sie bei der Auswahl des perfekten Zeitmessers oder Duftes zu unterstützen.'
-                  })}
+                  {t('service.text')}
+                </p>
+              </div>
+
+              <div className="border-t border-luxury-gray-200 pt-10 mt-12">
+                <p className="font-light text-luxury-gray-600 leading-relaxed text-center italic">
+                  {t('closing')}
                 </p>
               </div>
             </div>

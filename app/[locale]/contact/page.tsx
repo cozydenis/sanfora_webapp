@@ -81,16 +81,22 @@ export default function ContactPage() {
             <h3 className="font-serif text-2xl text-luxury-black mb-6">Kontaktinformationen</h3>
             <div className="space-y-2 text-luxury-gray-700 font-light">
               <p>Sanfora Time Pieces</p>
-              <p>Musterstraße 123</p>
-              <p>12345 Musterstadt</p>
+              <p>Furtbachstrasse 16</p>
+              <p>8107 Buchs ZH</p>
+              <p>Schweiz</p>
               <p className="pt-4">
-                <a href="mailto:info@sanfora-timepieces.de" className="hover:text-luxury-black transition-colors">
-                  info@sanfora-timepieces.de
+                <a href="mailto:Info@sanfora.ch" className="hover:text-luxury-black transition-colors">
+                  Info@sanfora.ch
                 </a>
               </p>
               <p>
-                <a href="tel:+491234567890" className="hover:text-luxury-black transition-colors">
-                  +49 (0) 123 456 7890
+                <a href="tel:+41763763655" className="hover:text-luxury-black transition-colors">
+                  +41 76 376 36 55
+                </a>
+              </p>
+              <p>
+                <a href="tel:+41798841212" className="hover:text-luxury-black transition-colors">
+                  +41 79 884 12 12
                 </a>
               </p>
             </div>

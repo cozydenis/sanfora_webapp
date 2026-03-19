@@ -33,38 +33,29 @@ export default async function ImpressumPage({ params: { locale } }: Props) {
       <Container className="py-16">
         <div className="max-w-3xl mx-auto space-y-8 font-light text-luxury-gray-700">
           <section>
-            <h2 className="font-serif text-2xl text-luxury-black mb-4">Angaben gemäß § 5 TMG</h2>
+            <h2 className="font-serif text-2xl text-luxury-black mb-4">Firmeninformationen</h2>
             <p>
               Sanfora Time Pieces<br />
-              Max Mustermann<br />
-              Musterstraße 123<br />
-              12345 Musterstadt<br />
-              Deutschland
+              Furtbachstrasse 16<br />
+              8107 Buchs ZH<br />
+              Schweiz
             </p>
           </section>
 
           <section>
             <h2 className="font-serif text-2xl text-luxury-black mb-4">Kontakt</h2>
             <p>
-              Telefon: +49 (0) 123 456 7890<br />
-              E-Mail: info@sanfora-timepieces.de
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-serif text-2xl text-luxury-black mb-4">Umsatzsteuer-ID</h2>
-            <p>
-              Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br />
-              DE123456789
+              Telefon: +41 76 376 36 55 / +41 79 884 12 12<br />
+              E-Mail: Info@sanfora.ch
             </p>
           </section>
 
           <section>
             <h2 className="font-serif text-2xl text-luxury-black mb-4">Verantwortlich für den Inhalt</h2>
             <p>
-              Max Mustermann<br />
-              Musterstraße 123<br />
-              12345 Musterstadt
+              Sanfora Time Pieces<br />
+              Furtbachstrasse 16<br />
+              8107 Buchs ZH
             </p>
           </section>
 
@@ -72,18 +63,18 @@ export default async function ImpressumPage({ params: { locale } }: Props) {
             <h2 className="font-serif text-2xl text-luxury-black mb-4">Haftungsausschluss</h2>
             <h3 className="font-normal text-luxury-black mt-4 mb-2">Haftung für Inhalte</h3>
             <p className="mb-4">
-              Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+              Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
             </p>
             <h3 className="font-normal text-luxury-black mt-4 mb-2">Haftung für Links</h3>
             <p className="mb-4">
-              Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+              Unsere Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
             </p>
           </section>
 
           <section>
             <h2 className="font-serif text-2xl text-luxury-black mb-4">Urheberrecht</h2>
             <p>
-              Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+              Die durch die Betreiber dieser Website erstellten Inhalte und Werke unterliegen dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
             </p>
           </section>
         </div>

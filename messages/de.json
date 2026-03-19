@@ -39,7 +39,20 @@
   "about": {
     "title": "Über Sanfora Time Pieces",
     "subtitle": "Unsere Geschichte",
-    "description": "Sanfora Time Pieces steht für Exzellenz in der Welt der Luxusuhren und erlesenen Düfte. Seit unserer Gründung widmen wir uns der Kunst der Zeitnahme und der Kreation unvergesslicher Dufterlebnisse."
+    "intro": "Wir sind zwei Freunde aus Zürich, vereint durch eine gemeinsame Leidenschaft: die Faszination für außergewöhnliche Zeitmesser und exquisite Düfte. Was als persönliche Sammelleidenschaft begann, ist heute zu Sanfora Time Pieces geworden – einem Ort, an dem wir unsere Begeisterung mit Gleichgesinnten teilen können.",
+    "passion": {
+      "title": "Unsere Leidenschaft",
+      "text": "Jede Uhr erzählt eine Geschichte. Jeder Duft weckt Erinnerungen. In einer Welt, die immer schneller wird, glauben wir an die Bedeutung von Momenten – Momente, die durch einen besonderen Zeitmesser eingefangen oder durch einen unvergesslichen Duft begleitet werden. Diese Überzeugung treibt uns an, jeden Tag aufs Neue nach den besten Stücken für unsere Kollektion zu suchen."
+    },
+    "philosophy": {
+      "title": "Unsere Philosophie",
+      "text": "Authentizität ist uns wichtig. Jedes Produkt, das Sie bei uns finden, wurde von uns persönlich ausgewählt und geprüft. Wir handeln nur mit Stücken, hinter denen wir zu hundert Prozent stehen können – ob es sich um eine legendäre Rolex, eine seltene Patek Philippe oder einen exklusiven Nischenduft handelt. Qualität und Vertrauen stehen für uns an erster Stelle."
+    },
+    "service": {
+      "title": "Persönlicher Kontakt",
+      "text": "Bei uns kaufen Sie nicht einfach ein Produkt – Sie teilen ein Stück unserer Leidenschaft. Wir nehmen uns Zeit für jede Anfrage, beraten ehrlich und sind auch nach dem Kauf für Sie da. Denn letztendlich geht es uns nicht nur um den Verkauf, sondern um die Freude, die ein besonderes Stück seinem neuen Besitzer bereitet."
+    },
+    "closing": "Mit Herzblut aus Zürich – für alle, die das Besondere schätzen."
   },
   "contact": {
     "title": "Kontakt",

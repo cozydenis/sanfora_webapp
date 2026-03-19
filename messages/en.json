@@ -39,7 +39,20 @@
   "about": {
     "title": "About Sanfora Time Pieces",
     "subtitle": "Our Story",
-    "description": "Sanfora Time Pieces represents excellence in the world of luxury watches and exquisite fragrances. Since our founding, we have dedicated ourselves to the art of timekeeping and creating unforgettable scent experiences."
+    "intro": "We are two friends from Zurich, united by a shared passion: the fascination for extraordinary timepieces and exquisite fragrances. What began as a personal collecting passion has evolved into Sanfora Time Pieces – a place where we can share our enthusiasm with like-minded individuals.",
+    "passion": {
+      "title": "Our Passion",
+      "text": "Every watch tells a story. Every fragrance awakens memories. In a world that's moving ever faster, we believe in the significance of moments – moments captured by a special timepiece or accompanied by an unforgettable scent. This conviction drives us to search for the finest pieces for our collection, day after day."
+    },
+    "philosophy": {
+      "title": "Our Philosophy",
+      "text": "Authenticity matters to us. Every product you find with us has been personally selected and verified by us. We only deal in pieces we can stand behind one hundred percent – whether it's a legendary Rolex, a rare Patek Philippe, or an exclusive niche fragrance. Quality and trust are our top priorities."
+    },
+    "service": {
+      "title": "Personal Touch",
+      "text": "When you buy from us, you're not simply purchasing a product – you're sharing a piece of our passion. We take time for every inquiry, provide honest advice, and remain available even after the purchase. Because ultimately, it's not just about the sale for us, but about the joy a special piece brings to its new owner."
+    },
+    "closing": "With passion from Zurich – for all who appreciate the extraordinary."
   },
   "contact": {
     "title": "Contact",
