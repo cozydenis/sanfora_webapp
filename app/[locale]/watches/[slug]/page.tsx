@@ -50,7 +50,7 @@ export default async function WatchDetailPage({ params: { locale, slug } }: Prop
   }
 
   const localeTyped = locale as 'de' | 'en';
-  const productUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://sanfora-timepieces.com'}/${locale}/watches/${slug}`;
+  const productUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://sanfora.ch'}/${locale}/watches/${slug}`;
 
   return (
     <div className="bg-luxury-white">

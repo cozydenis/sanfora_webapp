@@ -12,7 +12,7 @@ export function Footer() {
   // WhatsApp link for footer
   const whatsappUrl = getWhatsAppLink(
     'general inquiry',
-    `${process.env.NEXT_PUBLIC_SITE_URL || 'https://sanfora-timepieces.com'}/${locale}`,
+    `${process.env.NEXT_PUBLIC_SITE_URL || 'https://sanfora.ch'}/${locale}`,
     locale as 'de' | 'en'
   );
 

@@ -50,7 +50,7 @@ export default async function PerfumeDetailPage({ params: { locale, slug } }: Pr
   }
 
   const localeTyped = locale as 'de' | 'en';
-  const productUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://sanfora-timepieces.com'}/${locale}/perfumes/${slug}`;
+  const productUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://sanfora.ch'}/${locale}/perfumes/${slug}`;
 
   return (
     <div className="bg-luxury-white">
