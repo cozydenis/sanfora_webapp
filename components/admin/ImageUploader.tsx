@@ -20,7 +20,7 @@ export function ImageUploader({ onUploadComplete, onRemove, existingUrl }: Image
 
     // Validate file size (10MB max)
     if (file.size > 10 * 1024 * 1024) {
-      alert('Datei ist zu groß. Maximale Größe: 10MB');
+      alert('Datei ist zu gross. Maximale Grösse: 10MB');
       return;
     }
 

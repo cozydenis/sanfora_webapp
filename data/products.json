@@ -4,11 +4,14 @@
     "title": "Rolex Submariner Date",
     "slug": "rolex-submariner-date-116610ln",
     "category": "watch",
-    "collection": ["featured", "new-in"],
+    "collection": [
+      "featured",
+      "new-in"
+    ],
     "price": 12500,
     "currency": "EUR",
     "description": {
-      "de": "Die legendäre Rolex Submariner Date ist eine Ikone unter den Taucheruhren. Mit ihrem zeitlosen Design und der außergewöhnlichen Robustheit ist sie der perfekte Begleiter für jeden Anlass. Das schwarze Zifferblatt mit Leuchtindizes garantiert optimale Ablesbarkeit.",
+      "de": "Die legendäre Rolex Submariner Date ist eine Ikone unter den Taucheruhren. Mit ihrem zeitlosen Design und der aussergewöhnlichen Robustheit ist sie der perfekte Begleiter für jeden Anlass. Das schwarze Zifferblatt mit Leuchtindizes garantiert optimale Ablesbarkeit.",
       "en": "The legendary Rolex Submariner Date is an icon among diving watches. With its timeless design and exceptional robustness, it is the perfect companion for any occasion. The black dial with luminous indices guarantees optimal readability."
     },
     "images": [
@@ -30,7 +33,9 @@
     "title": "Patek Philippe Nautilus",
     "slug": "patek-philippe-nautilus-5711-1a",
     "category": "watch",
-    "collection": ["featured"],
+    "collection": [
+      "featured"
+    ],
     "price": null,
     "currency": "EUR",
     "description": {
@@ -55,7 +60,9 @@
     "title": "Audemars Piguet Royal Oak",
     "slug": "audemars-piguet-royal-oak-15400st",
     "category": "watch",
-    "collection": ["new-in"],
+    "collection": [
+      "new-in"
+    ],
     "price": 28900,
     "currency": "EUR",
     "description": {
@@ -82,7 +89,9 @@
     "title": "Creed Aventus",
     "slug": "creed-aventus-edp-100ml",
     "category": "perfume",
-    "collection": ["featured"],
+    "collection": [
+      "featured"
+    ],
     "price": 385,
     "currency": "EUR",
     "description": {
@@ -107,7 +116,10 @@
     "title": "Tom Ford Oud Wood",
     "slug": "tom-ford-oud-wood-edp-50ml",
     "category": "perfume",
-    "collection": ["new-in", "featured"],
+    "collection": [
+      "new-in",
+      "featured"
+    ],
     "price": 245,
     "currency": "EUR",
     "description": {

@@ -15,7 +15,7 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
     title: localeTyped === 'de' ? 'Impressum' : 'Imprint',
     description:
       localeTyped === 'de'
-        ? 'Rechtliche Informationen und Impressum von Sanfora Time Pieces. Angaben gemäß § 5 TMG.'
+        ? 'Rechtliche Informationen und Impressum von Sanfora Time Pieces. Angaben gemäss § 5 TMG.'
         : 'Legal information and imprint of Sanfora Time Pieces. Information according to § 5 TMG.',
     path: `/${locale}/impressum`,
     locale: localeTyped,
@@ -63,7 +63,7 @@ export default async function ImpressumPage({ params: { locale } }: Props) {
             <h2 className="font-serif text-2xl text-luxury-black mb-4">Haftungsausschluss</h2>
             <h3 className="font-normal text-luxury-black mt-4 mb-2">Haftung für Inhalte</h3>
             <p className="mb-4">
-              Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+              Die Inhalte dieser Website wurden mit grösster Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
             </p>
             <h3 className="font-normal text-luxury-black mt-4 mb-2">Haftung für Links</h3>
             <p className="mb-4">
@@ -74,7 +74,7 @@ export default async function ImpressumPage({ params: { locale } }: Props) {
           <section>
             <h2 className="font-serif text-2xl text-luxury-black mb-4">Urheberrecht</h2>
             <p>
-              Die durch die Betreiber dieser Website erstellten Inhalte und Werke unterliegen dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+              Die durch die Betreiber dieser Website erstellten Inhalte und Werke unterliegen dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung ausserhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
             </p>
           </section>
         </div>

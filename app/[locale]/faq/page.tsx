@@ -57,7 +57,7 @@ const faqData: FAQItem[] = [
       en: 'How do I properly care for my watch?'
     },
     answer: {
-      de: 'Wir empfehlen eine jährliche Wartung und professionelle Reinigung. Vermeiden Sie extreme Temperaturen und Stöße.',
+      de: 'Wir empfehlen eine jährliche Wartung und professionelle Reinigung. Vermeiden Sie extreme Temperaturen und Stösse.',
       en: 'We recommend annual maintenance and professional cleaning. Avoid extreme temperatures and impacts.'
     }
   }
@@ -84,9 +84,8 @@ export default function FAQPage() {
                   {item.question[locale]}
                 </span>
                 <svg
-                  className={`w-5 h-5 text-luxury-gray-500 transition-transform flex-shrink-0 ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
+                  className={`w-5 h-5 text-luxury-gray-500 transition-transform flex-shrink-0 ${openIndex === index ? 'rotate-180' : ''
+                    }`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

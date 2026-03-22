@@ -170,9 +170,9 @@ Reference Number → Referenznummer
 Year → Jahr
 Condition → Zustand
 Box & Papers → Box & Papiere
-Case Size → Gehäusegröße
+Case Size → Gehäusegrösse
 Movement → Uhrwerk
-Size → Größe
+Size → Grösse
 Concentration → Konzentration
 Top Notes → Kopfnoten
 Heart Notes → Herznoten
