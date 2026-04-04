@@ -90,8 +90,8 @@ export default function ContactPage() {
                 </a>
               </p>
               <p>
-                <a href="https://wa.me/41798841212" className="hover:text-luxury-black transition-colors">
-                  +41 79 884 12 12 (WhatsApp)
+                <a href="https://wa.me/41762000159" className="hover:text-luxury-black transition-colors">
+                  +41 76 200 01 59 (WhatsApp)
                 </a>
               </p>
             </div>
