@@ -3,8 +3,8 @@ export const siteConfig = {
   whatsapp: {
     // WhatsApp contact number
     // Format: international format without + or spaces
-    number: '41792000159',
-    display: '+41 79 200 01 59',
+    number: '41762000159',
+    display: '+41 76 200 01 59',
   },
   company: {
     name: 'Sanfora Time Pieces',
