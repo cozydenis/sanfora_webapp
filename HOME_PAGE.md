@@ -13,7 +13,7 @@ The home page follows a minimal, luxury design aesthetic inspired by high-end ti
 - Minimal CTA button with border-only style
 
 **Content:**
-- Main heading: "Sanfora Time Pieces" (Playfair Display serif font)
+- Main heading: "Sanfora Timepiece" (Playfair Display serif font)
 - Tagline: "Exclusive Watches & Luxury Perfumes"
 - CTA: "Discover Collection" button linking to New In page
 

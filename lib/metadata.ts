@@ -2,11 +2,11 @@ import { Metadata } from 'next';
 import { siteConfig } from './config';
 
 export const siteMetadata = {
-  siteName: 'Sanfora Time Pieces',
+  siteName: 'Sanfora Timepiece',
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://sanfora.ch',
   description: {
-    de: 'Entdecken Sie exklusive Luxusuhren und erlesene Parfüms bei Sanfora Time Pieces. Zeitlose Eleganz trifft auf handwerkliche Perfektion.',
-    en: 'Discover exclusive luxury watches and exquisite perfumes at Sanfora Time Pieces. Timeless elegance meets artisanal perfection.',
+    de: 'Entdecken Sie exklusive Luxusuhren und erlesene Parfüms bei Sanfora Timepiece. Zeitlose Eleganz trifft auf handwerkliche Perfektion.',
+    en: 'Discover exclusive luxury watches and exquisite perfumes at Sanfora Timepiece. Timeless elegance meets artisanal perfection.',
   },
   keywords: {
     de: 'Luxusuhren, Rolex, Patek Philippe, Audemars Piguet, Luxusparfüms, Creed, Tom Ford, Schweiz, Uhren kaufen, Parfüm kaufen',
@@ -127,7 +127,7 @@ export function generateProductJsonLd(product: {
         },
     brand: {
       '@type': 'Brand',
-      name: 'Sanfora Time Pieces',
+      name: 'Sanfora Timepiece',
     },
   };
 }

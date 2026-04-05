@@ -33,22 +33,22 @@ export function generateStaticParams() {
 export async function generateMetadata({ params: { locale } }: Props) {
   return {
     title: {
-      template: '%s | Sanfora Time Pieces',
-      default: 'Sanfora Time Pieces - Luxury Watches & Perfumes',
+      template: '%s | Sanfora Timepiece',
+      default: 'Sanfora Timepiece - Luxury Watches & Perfumes',
     },
     description:
       locale === 'de'
-        ? 'Entdecken Sie exklusive Luxusuhren und erlesene Parfüms bei Sanfora Time Pieces. Zeitlose Eleganz trifft auf handwerkliche Perfektion.'
-        : 'Discover exclusive luxury watches and exquisite perfumes at Sanfora Time Pieces. Timeless elegance meets artisanal perfection.',
+        ? 'Entdecken Sie exklusive Luxusuhren und erlesene Parfüms bei Sanfora Timepiece. Zeitlose Eleganz trifft auf handwerkliche Perfektion.'
+        : 'Discover exclusive luxury watches and exquisite perfumes at Sanfora Timepiece. Timeless elegance meets artisanal perfection.',
     keywords:
       locale === 'de'
         ? 'Luxusuhren, Rolex, Patek Philippe, Audemars Piguet, Luxusparfüms, Creed, Tom Ford, Schweiz'
         : 'luxury watches, Rolex, Patek Philippe, Audemars Piguet, luxury perfumes, Creed, Tom Ford, Switzerland',
-    authors: [{ name: 'Sanfora Time Pieces' }],
+    authors: [{ name: 'Sanfora Timepiece' }],
     openGraph: {
       type: 'website',
       locale: locale === 'de' ? 'de_DE' : 'en_US',
-      siteName: 'Sanfora Time Pieces',
+      siteName: 'Sanfora Timepiece',
     },
     twitter: {
       card: 'summary_large_image',

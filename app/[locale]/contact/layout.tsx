@@ -14,8 +14,8 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
     title: localeTyped === 'de' ? 'Kontakt' : 'Contact',
     description:
       localeTyped === 'de'
-        ? 'Kontaktieren Sie Sanfora Time Pieces. Wir freuen uns auf Ihre Anfrage zu Luxusuhren und exklusiven Parfüms. Persönliche Beratung und erstklassiger Service.'
-        : 'Contact Sanfora Time Pieces. We look forward to your inquiry about luxury watches and exclusive perfumes. Personal consultation and first-class service.',
+        ? 'Kontaktieren Sie Sanfora Timepiece. Wir freuen uns auf Ihre Anfrage zu Luxusuhren und exklusiven Parfüms. Persönliche Beratung und erstklassiger Service.'
+        : 'Contact Sanfora Timepiece. We look forward to your inquiry about luxury watches and exclusive perfumes. Personal consultation and first-class service.',
     path: `/${locale}/contact`,
     locale: localeTyped,
   });

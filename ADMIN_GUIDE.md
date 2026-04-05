@@ -1,6 +1,6 @@
 # Admin Dashboard Guide
 
-Welcome to the Sanfora Time Pieces Admin Dashboard! This guide will help you manage your inventory easily.
+Welcome to the Sanfora Timepiece Admin Dashboard! This guide will help you manage your inventory easily.
 
 ## Accessing the Admin Dashboard
 

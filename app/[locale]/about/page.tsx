@@ -15,8 +15,8 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
     title: localeTyped === 'de' ? 'Über uns' : 'About Us',
     description:
       localeTyped === 'de'
-        ? 'Erfahren Sie mehr über Sanfora Time Pieces. Unsere Geschichte, unsere Leidenschaft für Luxusuhren und exklusive Parfüms, und unser Engagement für höchste Qualität.'
-        : 'Learn more about Sanfora Time Pieces. Our story, our passion for luxury watches and exclusive perfumes, and our commitment to the highest quality.',
+        ? 'Erfahren Sie mehr über Sanfora Timepiece. Unsere Geschichte, unsere Leidenschaft für Luxusuhren und exklusive Parfüms, und unser Engagement für höchste Qualität.'
+        : 'Learn more about Sanfora Timepiece. Our story, our passion for luxury watches and exclusive perfumes, and our commitment to the highest quality.',
     path: `/${locale}/about`,
     locale: localeTyped,
   });

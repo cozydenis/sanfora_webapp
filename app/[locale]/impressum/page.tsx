@@ -15,8 +15,8 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
     title: localeTyped === 'de' ? 'Impressum' : 'Imprint',
     description:
       localeTyped === 'de'
-        ? 'Rechtliche Informationen und Impressum von Sanfora Time Pieces. Angaben gemäss § 5 TMG.'
-        : 'Legal information and imprint of Sanfora Time Pieces. Information according to § 5 TMG.',
+        ? 'Rechtliche Informationen und Impressum von Sanfora Timepiece. Angaben gemäss § 5 TMG.'
+        : 'Legal information and imprint of Sanfora Timepiece. Information according to § 5 TMG.',
     path: `/${locale}/impressum`,
     locale: localeTyped,
   });
@@ -35,7 +35,7 @@ export default async function ImpressumPage({ params: { locale } }: Props) {
           <section>
             <h2 className="font-serif text-2xl text-luxury-black mb-4">Firmeninformationen</h2>
             <p>
-              Sanfora Time Pieces<br />
+              Sanfora Timepiece<br />
               Furtbachstrasse 16<br />
               8107 Buchs ZH<br />
               Schweiz
@@ -53,7 +53,7 @@ export default async function ImpressumPage({ params: { locale } }: Props) {
           <section>
             <h2 className="font-serif text-2xl text-luxury-black mb-4">Verantwortlich für den Inhalt</h2>
             <p>
-              Sanfora Time Pieces<br />
+              Sanfora Timepiece<br />
               Furtbachstrasse 16<br />
               8107 Buchs ZH
             </p>

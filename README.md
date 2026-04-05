@@ -1,4 +1,4 @@
-# Sanfora Time Pieces
+# Sanfora Timepiece
 
 A luxury catalog website showcasing exclusive watches and perfumes. Built with Next.js 14, TypeScript, and Tailwind CSS.
 
@@ -160,4 +160,4 @@ Change fonts in `app/[locale]/layout.tsx`.
 
 ## License
 
-All rights reserved © Sanfora Time Pieces
+All rights reserved © Sanfora Timepiece

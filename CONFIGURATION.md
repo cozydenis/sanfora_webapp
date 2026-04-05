@@ -1,6 +1,6 @@
 # Configuration Guide
 
-This guide covers all configurable settings in the Sanfora Time Pieces website.
+This guide covers all configurable settings in the Sanfora Timepiece website.
 
 ## WhatsApp Number
 
@@ -27,7 +27,7 @@ See [WHATSAPP_SETUP.md](./WHATSAPP_SETUP.md) for detailed instructions.
 ```typescript
 export const siteConfig = {
   company: {
-    name: 'Sanfora Time Pieces',
+    name: 'Sanfora Timepiece',
     email: 'info@sanfora-timepieces.de',
     phone: '+41 79 917 33 26',
   },
@@ -160,7 +160,7 @@ export const routing = defineRouting({
 
 ```typescript
 export const metadata = {
-  title: 'Sanfora Time Pieces - Luxury Watches & Perfumes',
+  title: 'Sanfora Timepiece - Luxury Watches & Perfumes',
   description: 'Discover our exclusive collection...',
 };
 ```
@@ -169,7 +169,7 @@ For page-specific meta tags, add to each page:
 
 ```typescript
 export const metadata = {
-  title: 'Watches - Sanfora Time Pieces',
+  title: 'Watches - Sanfora Timepiece',
   description: 'Browse our collection of luxury timepieces',
 };
 ```
@@ -290,7 +290,7 @@ Update reference in `components/layout/Header.tsx`:
 ```typescript
 <Image
   src="/imgs/logo.png" // Update extension
-  alt="Sanfora Time Pieces"
+  alt="Sanfora Timepiece"
   width={120}
   height={40}
 />

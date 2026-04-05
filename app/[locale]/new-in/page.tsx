@@ -17,8 +17,8 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
     title: localeTyped === 'de' ? 'Neuheiten' : 'New In',
     description:
       localeTyped === 'de'
-        ? 'Die neuesten Ergänzungen unserer Kollektion. Entdecken Sie frisch eingetroffene Luxusuhren und exklusive Parfüms bei Sanfora Time Pieces.'
-        : 'The latest additions to our collection. Discover newly arrived luxury watches and exclusive perfumes at Sanfora Time Pieces.',
+        ? 'Die neuesten Ergänzungen unserer Kollektion. Entdecken Sie frisch eingetroffene Luxusuhren und exklusive Parfüms bei Sanfora Timepiece.'
+        : 'The latest additions to our collection. Discover newly arrived luxury watches and exclusive perfumes at Sanfora Timepiece.',
     path: `/${locale}/new-in`,
     locale: localeTyped,
   });

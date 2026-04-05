@@ -1,4 +1,4 @@
--- Sanfora Time Pieces - Products Database Schema
+-- Sanfora Timepiece - Products Database Schema
 
 -- Create products table
 CREATE TABLE IF NOT EXISTS products (

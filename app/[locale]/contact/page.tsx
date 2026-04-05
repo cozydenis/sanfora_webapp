@@ -80,7 +80,7 @@ export default function ContactPage() {
           <div className="mt-12 pt-12 border-t border-luxury-gray-200 text-center">
             <h3 className="font-serif text-2xl text-luxury-black mb-6">Kontaktinformationen</h3>
             <div className="space-y-2 text-luxury-gray-700 font-light">
-              <p>Sanfora Time Pieces</p>
+              <p>Sanfora Timepiece</p>
               <p>Furtbachstrasse 16</p>
               <p>8107 Buchs ZH</p>
               <p>Schweiz</p>

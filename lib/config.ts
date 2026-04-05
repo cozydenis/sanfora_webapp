@@ -7,7 +7,7 @@ export const siteConfig = {
     display: '+41 76 200 01 59',
   },
   company: {
-    name: 'Sanfora Time Pieces',
+    name: 'Sanfora Timepiece',
     email: 'Info@sanfora.ch',
     address: {
       street: 'Furtbachstrasse 16',
